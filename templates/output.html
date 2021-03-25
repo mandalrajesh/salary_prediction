@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <style>
+        /*modal card */
+  body{
+      background:linear-gradient(90deg, rgba(0, 201, 255,0.7) 0%, rgba(146, 254, 157,0.7) 100%),url("https://firebasestorage.googleapis.com/v0/b/email-9a4ba.appspot.com/o/output-bg.jpg?alt=media&token=6f9fe611-12ba-43c8-8988-49d38e42d511");
+      background-size:cover;
+      background-position:center;
+  }      
+  .modal-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background-color:rgba(255, 255, 255, 0.3);
+    border-radius:25px;
+    max-width: 300px;
+    margin: 100px auto auto auto;
+    text-align: center;
+    font-family: arial;
+    padding:10px;
+  }
+  
+  .modal-title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .cardBtn{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    border-radius:25px;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 18px;
+  }
+  
+  .card-link{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .cardBtn:hover, a:hover {
+    opacity: 0.7;
+  }
+  .modal-card .result{
+  color: red;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="modal-card">
+        <p class="modal-title"><h2>Your Predicted Salary</h2></p>
+        <img src="/img/user.jpg" alt="User's Picture" style="width:50%;padding-top:15px;border-radius:50%;" class="bluemate-circle bluemate-hover-opacity">
+        <h1>Dear, User</h1>
+        <p class="modal-title">Your Name</p>
+        <p class="modal-title">Your Contact</p>
+        <p class="modal-title">Your Email</p>
+        
+        </p><div class="result">{{ prediction_text }}</div></p>
+        </p><div class="result">{{ prediction_textt }}</div></p>
+        </p><div class="result">{{ prediction_textt }}</div></p>
+        </p><div class="result">{{ prediction_textt }}</div></p>
+        </p><div class="result">{{ prediction_textt }}</div></p>
+        </p><div class="result">{{ prediction_textt }}</div></p>
+        
+        <div style="margin: 24px 0;">
+          <a href="#" class="card-link"><i class="fa fa-dribbble"></i></a> 
+          <a href="#" class="card-link"><i class="fa fa-twitter"></i></a>  
+          <a href="#" class="card-link"><i class="fa fa-linkedin"></i></a>  
+          <a href="#" class="card-link"><i class="fa fa-facebook"></i></a> 
+        </div>
+        <p><a href="http://127.0.0.1:5000/#prediction"><button class="cardBtn">Predict More</button></a></p>
+        </div>
+</body>
+</html>
